@@ -25,7 +25,7 @@ PASSWORD_HASHERS = [
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-uql45fkiys2xvrsw@=cea*sk4*y6efeji+he$hzshiu(tp65zn'
+SECRET_KEY = 'django-insecure-08^qox#b05=jm3o1^=-rx$m^3%z1)_zwl)-h8_a+@m5mgez&7x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
