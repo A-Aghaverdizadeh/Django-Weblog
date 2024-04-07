@@ -1,0 +1,415 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"test_django"},
+{"type":"table","name":"account_profile","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_group","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_group_permissions","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_permission","database":"test_django","data":
+[
+{"id":"1","name":"Can add log entry","content_type_id":"1","codename":"add_logentry"},
+{"id":"2","name":"Can change log entry","content_type_id":"1","codename":"change_logentry"},
+{"id":"3","name":"Can delete log entry","content_type_id":"1","codename":"delete_logentry"},
+{"id":"4","name":"Can view log entry","content_type_id":"1","codename":"view_logentry"},
+{"id":"5","name":"Can add permission","content_type_id":"2","codename":"add_permission"},
+{"id":"6","name":"Can change permission","content_type_id":"2","codename":"change_permission"},
+{"id":"7","name":"Can delete permission","content_type_id":"2","codename":"delete_permission"},
+{"id":"8","name":"Can view permission","content_type_id":"2","codename":"view_permission"},
+{"id":"9","name":"Can add group","content_type_id":"3","codename":"add_group"},
+{"id":"10","name":"Can change group","content_type_id":"3","codename":"change_group"},
+{"id":"11","name":"Can delete group","content_type_id":"3","codename":"delete_group"},
+{"id":"12","name":"Can view group","content_type_id":"3","codename":"view_group"},
+{"id":"13","name":"Can add user","content_type_id":"4","codename":"add_user"},
+{"id":"14","name":"Can change user","content_type_id":"4","codename":"change_user"},
+{"id":"15","name":"Can delete user","content_type_id":"4","codename":"delete_user"},
+{"id":"16","name":"Can view user","content_type_id":"4","codename":"view_user"},
+{"id":"17","name":"Can add content type","content_type_id":"5","codename":"add_contenttype"},
+{"id":"18","name":"Can change content type","content_type_id":"5","codename":"change_contenttype"},
+{"id":"19","name":"Can delete content type","content_type_id":"5","codename":"delete_contenttype"},
+{"id":"20","name":"Can view content type","content_type_id":"5","codename":"view_contenttype"},
+{"id":"21","name":"Can add session","content_type_id":"6","codename":"add_session"},
+{"id":"22","name":"Can change session","content_type_id":"6","codename":"change_session"},
+{"id":"23","name":"Can delete session","content_type_id":"6","codename":"delete_session"},
+{"id":"24","name":"Can view session","content_type_id":"6","codename":"view_session"},
+{"id":"25","name":"Can add post","content_type_id":"7","codename":"add_post"},
+{"id":"26","name":"Can change post","content_type_id":"7","codename":"change_post"},
+{"id":"27","name":"Can delete post","content_type_id":"7","codename":"delete_post"},
+{"id":"28","name":"Can view post","content_type_id":"7","codename":"view_post"},
+{"id":"29","name":"Can add comment","content_type_id":"8","codename":"add_comment"},
+{"id":"30","name":"Can change comment","content_type_id":"8","codename":"change_comment"},
+{"id":"31","name":"Can delete comment","content_type_id":"8","codename":"delete_comment"},
+{"id":"32","name":"Can view comment","content_type_id":"8","codename":"view_comment"},
+{"id":"33","name":"Can add tag","content_type_id":"9","codename":"add_tag"},
+{"id":"34","name":"Can change tag","content_type_id":"9","codename":"change_tag"},
+{"id":"35","name":"Can delete tag","content_type_id":"9","codename":"delete_tag"},
+{"id":"36","name":"Can view tag","content_type_id":"9","codename":"view_tag"},
+{"id":"37","name":"Can add tagged item","content_type_id":"10","codename":"add_taggeditem"},
+{"id":"38","name":"Can change tagged item","content_type_id":"10","codename":"change_taggeditem"},
+{"id":"39","name":"Can delete tagged item","content_type_id":"10","codename":"delete_taggeditem"},
+{"id":"40","name":"Can view tagged item","content_type_id":"10","codename":"view_taggeditem"},
+{"id":"41","name":"Can add profile","content_type_id":"11","codename":"add_profile"},
+{"id":"42","name":"Can change profile","content_type_id":"11","codename":"change_profile"},
+{"id":"43","name":"Can delete profile","content_type_id":"11","codename":"delete_profile"},
+{"id":"44","name":"Can view profile","content_type_id":"11","codename":"view_profile"},
+{"id":"45","name":"Can add association","content_type_id":"12","codename":"add_association"},
+{"id":"46","name":"Can change association","content_type_id":"12","codename":"change_association"},
+{"id":"47","name":"Can delete association","content_type_id":"12","codename":"delete_association"},
+{"id":"48","name":"Can view association","content_type_id":"12","codename":"view_association"},
+{"id":"49","name":"Can add code","content_type_id":"13","codename":"add_code"},
+{"id":"50","name":"Can change code","content_type_id":"13","codename":"change_code"},
+{"id":"51","name":"Can delete code","content_type_id":"13","codename":"delete_code"},
+{"id":"52","name":"Can view code","content_type_id":"13","codename":"view_code"},
+{"id":"53","name":"Can add nonce","content_type_id":"14","codename":"add_nonce"},
+{"id":"54","name":"Can change nonce","content_type_id":"14","codename":"change_nonce"},
+{"id":"55","name":"Can delete nonce","content_type_id":"14","codename":"delete_nonce"},
+{"id":"56","name":"Can view nonce","content_type_id":"14","codename":"view_nonce"},
+{"id":"57","name":"Can add user social auth","content_type_id":"15","codename":"add_usersocialauth"},
+{"id":"58","name":"Can change user social auth","content_type_id":"15","codename":"change_usersocialauth"},
+{"id":"59","name":"Can delete user social auth","content_type_id":"15","codename":"delete_usersocialauth"},
+{"id":"60","name":"Can view user social auth","content_type_id":"15","codename":"view_usersocialauth"},
+{"id":"61","name":"Can add partial","content_type_id":"16","codename":"add_partial"},
+{"id":"62","name":"Can change partial","content_type_id":"16","codename":"change_partial"},
+{"id":"63","name":"Can delete partial","content_type_id":"16","codename":"delete_partial"},
+{"id":"64","name":"Can view partial","content_type_id":"16","codename":"view_partial"}
+]
+}
+,{"type":"table","name":"auth_user","database":"test_django","data":
+[
+{"id":"1","password":"pbkdf2_sha256$600000$3QILJ5AKc5qBUsPyPMh26s$eZdK6qItHalEZpqe++cV\/9wPMbRcWs9wH+SPwzEt420=","last_login":"2024-04-02 17:41:55.897621","is_superuser":"1","username":"admin","first_name":"Amir","last_name":"Aghaverdi","email":"aghaverdi88@gmail.com","is_staff":"1","is_active":"1","date_joined":"2024-03-18 14:26:42.143000"},
+{"id":"6","password":"pbkdf2_sha256$600000$4GNMCynLJpeSgvbmOltjPD$5S\/bkijmhqCXbaYRI29r2Dhn5o9pzEDWqE11UUwDz6U=","last_login":"2024-03-31 09:22:06.551873","is_superuser":"0","username":"Aghaverdi","first_name":"Amir","last_name":"Aghaverdi","email":"aghaverdi99@gmail.com","is_staff":"0","is_active":"1","date_joined":"2024-03-21 21:30:53.815008"},
+{"id":"7","password":"pbkdf2_sha256$600000$eDnJT1kKMKmaV3oOix1Irr$yiezyuC27\/zEEqPcP7eWpOqeNd0PhDu96geWodGxPMU=","last_login":"2024-04-02 11:24:36.270367","is_superuser":"0","username":"Mohammad","first_name":"Mohammad","last_name":"Aghaverdi","email":"aghaverdi88@gmail.com","is_staff":"0","is_active":"1","date_joined":"2024-03-22 23:52:54.222514"},
+{"id":"8","password":"pbkdf2_sha256$600000$WZXaGYQNm23mee7fV3rgor$ftTQA60z94Y37UGn3lthCdoeCVgixWtmTcQnChiW7Ao=","last_login":"2024-03-30 09:48:40.606493","is_superuser":"0","username":"Ali","first_name":"Ali","last_name":"Goli","email":"Ali@gmail.com","is_staff":"0","is_active":"1","date_joined":"2024-03-30 09:48:32.684682"}
+]
+}
+,{"type":"table","name":"auth_user_groups","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_user_user_permissions","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"bloghome_comment","database":"test_django","data":
+[
+{"id":"7","body":"I love the Triss Part in this bookðŸ˜‚ðŸ˜‚ðŸ˜‚","created":"2024-03-25 20:52:43.000000","updated":"2024-03-26 15:01:41.033867","active":"1","post_id":"13","user_id":"6"},
+{"id":"10","body":"yeah i myself read that book 3 times \r\nits wonderful book ðŸ™ƒðŸ™ƒ","created":"2024-03-26 15:22:57.204207","updated":"2024-03-26 15:22:57.204207","active":"1","post_id":"13","user_id":"7"},
+{"id":"12","body":"test comment","created":"2024-03-26 19:55:01.814165","updated":"2024-03-26 19:55:01.814165","active":"1","post_id":"13","user_id":"6"},
+{"id":"13","body":"test","created":"2024-03-26 20:07:32.731453","updated":"2024-03-26 20:07:32.731453","active":"1","post_id":"13","user_id":"1"},
+{"id":"19","body":"kgf[po","created":"2024-03-27 14:43:13.131688","updated":"2024-03-27 14:43:13.131688","active":"1","post_id":"13","user_id":"7"}
+]
+}
+,{"type":"table","name":"bloghome_post","database":"test_django","data":
+[
+{"id":"6","publish":"2024-03-24 17:43:16.000000","created":"2024-03-24 17:44:55.147177","updated":"2024-03-31 09:58:28.199243","status":"PB","author_id":"6","image":"Posts\/i.jpg"},
+{"id":"7","publish":"2024-03-25 10:36:55.000000","created":"2024-03-25 10:44:43.715934","updated":"2024-03-30 15:04:51.255811","status":"PB","author_id":"6","image":"Posts\/alexandra-albu-the-last-wish.jpg"},
+{"id":"8","publish":"2024-03-25 10:52:31.000000","created":"2024-03-25 10:53:32.040016","updated":"2024-03-31 10:00:04.062376","status":"PB","author_id":"6","image":"Posts\/da4da1de028d7a28cd228b4c14de1d1b.jpg"},
+{"id":"9","publish":"2024-03-25 11:10:16.000000","created":"2024-03-25 12:00:35.633962","updated":"2024-03-31 10:48:09.386761","status":"PB","author_id":"6","image":"Posts\/ddf9aa828cf3b3241de6f2f0cfc1f60b.jpg"},
+{"id":"10","publish":"2024-03-25 12:02:22.000000","created":"2024-03-25 12:11:56.456989","updated":"2024-03-31 10:53:02.958246","status":"PB","author_id":"6","image":"Posts\/1119593-The-Witcher-Geralt-of-Rivia-mythology-ART-screenshot-ancient-history-middl_L46Ed44.jpg"},
+{"id":"11","publish":"2024-03-25 12:15:12.000000","created":"2024-03-25 12:16:09.648970","updated":"2024-03-31 10:46:16.969894","status":"PB","author_id":"6","image":"Posts\/wojtek-fus-ciri.jpg"},
+{"id":"12","publish":"2024-03-25 12:24:09.000000","created":"2024-03-25 12:26:09.616360","updated":"2024-03-31 10:49:10.865332","status":"PB","author_id":"6","image":"Posts\/maxresdefault.jpg"},
+{"id":"13","publish":"2024-03-25 13:18:31.000000","created":"2024-03-25 13:21:48.048963","updated":"2024-03-31 10:50:39.485067","status":"PB","author_id":"6","image":"Posts\/fadly-romdhani-rox-to-kaer-morhen.jpg"},
+{"id":"25","publish":"2024-03-28 09:22:47.790809","created":"2024-03-28 09:22:47.894489","updated":"2024-03-30 10:42:09.251500","status":"PB","author_id":"7","image":"Posts\/images_UGAQeLa.jfif"}
+]
+}
+,{"type":"table","name":"django_admin_log","database":"test_django","data":
+[
+{"id":"1","action_time":"2024-03-18 14:27:29.603000","object_id":"1","object_repr":"test","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"2","action_time":"2024-03-18 14:49:22.458000","object_id":"1","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Status\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"3","action_time":"2024-03-18 14:50:34.151000","object_id":"2","object_repr":"test 2","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"4","action_time":"2024-03-18 14:50:53.700000","object_id":"2","object_repr":"test 2","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Status\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"5","action_time":"2024-03-18 15:42:19.672000","object_id":"3","object_repr":"test 3","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"6","action_time":"2024-03-18 15:42:25.217000","object_id":"3","object_repr":"test 3","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Status\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"7","action_time":"2024-03-19 13:26:13.700762","object_id":"4","object_repr":"mysql","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"8","action_time":"2024-03-19 13:50:09.706270","object_id":"4","object_repr":"mysql","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"9","action_time":"2024-03-19 14:39:30.272826","object_id":"5","object_repr":"mysql","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"10","action_time":"2024-03-19 15:07:22.899123","object_id":"5","object_repr":"mysql","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"11","action_time":"2024-03-20 12:25:59.203682","object_id":"2","object_repr":"test","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"4","user_id":"1"},
+{"id":"12","action_time":"2024-03-21 14:05:59.859529","object_id":"2","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Email address\"]}}]","content_type_id":"4","user_id":"1"},
+{"id":"13","action_time":"2024-03-21 16:58:47.130591","object_id":"3","object_repr":"Aghaverdi","action_flag":"3","change_message":"","content_type_id":"4","user_id":"1"},
+{"id":"14","action_time":"2024-03-21 16:58:51.886888","object_id":"4","object_repr":"Aghaverdi2","action_flag":"3","change_message":"","content_type_id":"4","user_id":"1"},
+{"id":"15","action_time":"2024-03-21 16:58:56.062161","object_id":"2","object_repr":"test","action_flag":"3","change_message":"","content_type_id":"4","user_id":"1"},
+{"id":"16","action_time":"2024-03-21 17:28:05.733259","object_id":"5","object_repr":"Aghaverdi","action_flag":"3","change_message":"","content_type_id":"4","user_id":"1"},
+{"id":"17","action_time":"2024-03-22 21:55:22.032405","object_id":"1","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Author\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"18","action_time":"2024-03-22 22:01:45.733742","object_id":"1","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"19","action_time":"2024-03-22 22:01:55.613764","object_id":"1","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"20","action_time":"2024-03-22 22:04:05.197764","object_id":"1","object_repr":"test","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"21","action_time":"2024-03-22 22:04:15.723340","object_id":"2","object_repr":"test 2","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"22","action_time":"2024-03-22 22:19:56.094112","object_id":"3","object_repr":"test 3","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"23","action_time":"2024-03-22 22:20:33.277661","object_id":"2","object_repr":"test 2","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"24","action_time":"2024-03-22 23:36:17.349975","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"25","action_time":"2024-03-22 23:37:54.911091","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"26","action_time":"2024-03-22 23:38:23.050665","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"27","action_time":"2024-03-22 23:39:02.320791","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"28","action_time":"2024-03-22 23:39:15.692011","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"29","action_time":"2024-03-22 23:40:28.828969","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"30","action_time":"2024-03-22 23:41:03.336408","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"31","action_time":"2024-03-22 23:41:41.543364","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"32","action_time":"2024-03-22 23:43:38.487700","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"33","action_time":"2024-03-22 23:44:22.873097","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"34","action_time":"2024-03-22 23:44:46.555937","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"35","action_time":"2024-03-22 23:46:50.451575","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"36","action_time":"2024-03-22 23:47:16.148501","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"37","action_time":"2024-03-22 23:47:44.588807","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"38","action_time":"2024-03-22 23:56:22.566228","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"39","action_time":"2024-03-22 23:56:56.613820","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"40","action_time":"2024-03-22 23:57:18.916661","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"41","action_time":"2024-03-23 00:10:04.731967","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"42","action_time":"2024-03-23 14:26:19.359505","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Bio\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"43","action_time":"2024-03-23 14:26:30.465671","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Bio\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"44","action_time":"2024-03-23 14:26:34.154689","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Bio\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"45","action_time":"2024-03-23 15:16:18.404009","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"46","action_time":"2024-03-23 15:16:55.128042","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"47","action_time":"2024-03-24 17:44:55.169296","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"48","action_time":"2024-03-24 19:43:32.467602","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Tags\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"49","action_time":"2024-03-25 10:36:32.909721","object_id":"1","object_repr":"test","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"50","action_time":"2024-03-25 10:36:37.408337","object_id":"2","object_repr":"test 2","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"51","action_time":"2024-03-25 10:36:42.057218","object_id":"3","object_repr":"test 3","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"52","action_time":"2024-03-25 10:44:43.735795","object_id":"7","object_repr":"Witcher The last wish","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"53","action_time":"2024-03-25 10:53:32.049989","object_id":"8","object_repr":"Witcher sword of destiny","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"54","action_time":"2024-03-25 10:58:38.690073","object_id":"8","object_repr":"Witcher sword of destiny","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"55","action_time":"2024-03-25 12:00:35.647202","object_id":"9","object_repr":"Witcher the time of condempt","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"56","action_time":"2024-03-25 12:11:56.458475","object_id":"10","object_repr":"Witcher Baptism of Fire","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"57","action_time":"2024-03-25 12:16:09.688518","object_id":"11","object_repr":"witcher tower of swallows","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"58","action_time":"2024-03-25 12:26:09.633480","object_id":"12","object_repr":"The Lady of the Lake","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"59","action_time":"2024-03-25 12:26:58.675234","object_id":"12","object_repr":"The Lady of the Lake","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Image\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"60","action_time":"2024-03-25 13:08:55.679403","object_id":"12","object_repr":"ÙŒÙŒWitcher The Lady of the Lake","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Title\", \"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"61","action_time":"2024-03-25 13:11:23.316921","object_id":"7","object_repr":"Witcher The last wish","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"62","action_time":"2024-03-25 13:11:23.330855","object_id":"7","object_repr":"Witcher The last wish","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"63","action_time":"2024-03-25 13:15:54.460387","object_id":"8","object_repr":"Witcher sword of destiny","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"64","action_time":"2024-03-25 13:21:48.061929","object_id":"13","object_repr":"Witcher Blood Of Elves","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"65","action_time":"2024-03-25 13:31:23.619731","object_id":"9","object_repr":"Witcher the time of condempt","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"66","action_time":"2024-03-25 13:34:09.734285","object_id":"10","object_repr":"Witcher Baptism of Fire","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"67","action_time":"2024-03-25 13:35:19.829552","object_id":"11","object_repr":"witcher tower of swallows","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"68","action_time":"2024-03-25 13:35:29.500203","object_id":"12","object_repr":"ÙŒÙŒWitcher The Lady of the Lake","action_flag":"2","change_message":"[]","content_type_id":"7","user_id":"1"},
+{"id":"69","action_time":"2024-03-25 13:35:33.503804","object_id":"13","object_repr":"Witcher Blood Of Elves","action_flag":"2","change_message":"[]","content_type_id":"7","user_id":"1"},
+{"id":"70","action_time":"2024-03-25 17:39:31.253842","object_id":"8","object_repr":"comment by Aghaverdi on Witcher Blood Of Elves","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"71","action_time":"2024-03-25 17:40:15.872908","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[]","content_type_id":"11","user_id":"1"},
+{"id":"72","action_time":"2024-03-25 17:40:44.044194","object_id":"9","object_repr":"comment by admin on Witcher Blood Of Elves","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"73","action_time":"2024-03-26 12:01:49.980032","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Back photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"74","action_time":"2024-03-26 12:15:50.970168","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"75","action_time":"2024-03-26 12:20:47.250710","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"76","action_time":"2024-03-26 12:21:33.453985","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"77","action_time":"2024-03-26 12:22:12.773696","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"78","action_time":"2024-03-26 12:22:57.721359","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"79","action_time":"2024-03-26 12:24:20.780421","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"80","action_time":"2024-03-26 12:25:18.276244","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"81","action_time":"2024-03-26 15:01:41.063142","object_id":"7","object_repr":"comment by Aghaverdi on Witcher Blood Of Elves","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"8","user_id":"1"},
+{"id":"82","action_time":"2024-03-26 15:20:43.846684","object_id":"1","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[]","content_type_id":"11","user_id":"1"},
+{"id":"83","action_time":"2024-03-26 15:49:54.164126","object_id":"11","object_repr":"comment by admin on Witcher Blood Of Elves","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"84","action_time":"2024-03-26 20:10:22.203919","object_id":"2","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Detail photo\", \"Back photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"85","action_time":"2024-03-27 14:28:54.452787","object_id":"14","object_repr":"comment by admin on ÙŒÙŒWitcher The Lady of the Lake","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"86","action_time":"2024-03-27 14:28:57.636009","object_id":"15","object_repr":"comment by admin on ÙŒÙŒWitcher The Lady of the Lake","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"87","action_time":"2024-03-27 14:29:00.719371","object_id":"16","object_repr":"comment by admin on ÙŒÙŒWitcher The Lady of the Lake","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"88","action_time":"2024-03-27 14:29:11.635727","object_id":"17","object_repr":"comment by admin on ÙŒÙŒWitcher The Lady of the Lake","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"89","action_time":"2024-03-27 14:29:14.535546","object_id":"18","object_repr":"comment by admin on ÙŒÙŒWitcher The Lady of the Lake","action_flag":"3","change_message":"","content_type_id":"8","user_id":"1"},
+{"id":"90","action_time":"2024-03-27 14:29:38.936010","object_id":"12","object_repr":"Witcher The Lady of the Lake","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Title\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"91","action_time":"2024-03-27 14:55:10.165161","object_id":"3","object_repr":"Profile of { self.user.username }","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Photo\", \"Detail photo\", \"Back photo\"]}}]","content_type_id":"11","user_id":"1"},
+{"id":"92","action_time":"2024-03-27 19:04:43.260488","object_id":"14","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"93","action_time":"2024-03-27 19:04:43.260488","object_id":"15","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"94","action_time":"2024-03-27 19:04:43.276112","object_id":"16","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"95","action_time":"2024-03-27 19:04:43.283711","object_id":"17","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"96","action_time":"2024-03-27 19:04:43.286821","object_id":"18","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"97","action_time":"2024-03-27 19:04:43.291688","object_id":"19","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"98","action_time":"2024-03-27 19:12:12.810355","object_id":"20","object_repr":"Django 4 By Example","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Slug\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"99","action_time":"2024-03-27 19:13:08.206121","object_id":"20","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"100","action_time":"2024-03-28 09:09:37.942137","object_id":"21","object_repr":"edttjntgjn","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Slug\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"101","action_time":"2024-03-28 09:10:03.948054","object_id":"21","object_repr":"edttjntgjn","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"102","action_time":"2024-03-28 09:22:04.640372","object_id":"22","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"103","action_time":"2024-03-28 09:22:04.656850","object_id":"23","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"104","action_time":"2024-03-28 09:22:04.659843","object_id":"24","object_repr":"Django 4 By Example","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"105","action_time":"2024-03-28 09:29:17.867969","object_id":"6","object_repr":"tjjejej","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"106","action_time":"2024-03-30 09:46:26.058502","object_id":"26","object_repr":"test","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"7","user_id":"1"},
+{"id":"107","action_time":"2024-03-30 09:49:29.393575","object_id":"26","object_repr":"test","action_flag":"3","change_message":"","content_type_id":"7","user_id":"1"},
+{"id":"108","action_time":"2024-03-30 10:38:39.386172","object_id":"7","object_repr":"<Tag: django>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"109","action_time":"2024-03-30 10:38:43.329046","object_id":"8","object_repr":"[<Tag: book>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"110","action_time":"2024-03-30 11:03:48.974188","object_id":"9","object_repr":"<Tag: django>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"111","action_time":"2024-03-30 11:03:54.236776","object_id":"10","object_repr":"[<Tag: book>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"112","action_time":"2024-03-30 11:17:37.132717","object_id":"7","object_repr":"Witcher The last wish","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"113","action_time":"2024-03-30 11:20:45.258659","object_id":"7","object_repr":"Witcher The last wish","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"114","action_time":"2024-03-30 12:12:53.107103","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"115","action_time":"2024-03-30 12:25:21.434988","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"116","action_time":"2024-03-30 12:27:03.932956","object_id":"7","object_repr":"Witcher The last wish","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"117","action_time":"2024-03-30 15:41:32.644371","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Body\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"118","action_time":"2024-03-31 08:42:47.156547","object_id":"11","object_repr":"witcher tower of swallows","action_flag":"2","change_message":"[]","content_type_id":"7","user_id":"1"},
+{"id":"119","action_time":"2024-03-31 09:11:02.862821","object_id":"12","object_repr":"<Tag: book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"120","action_time":"2024-03-31 09:11:02.897728","object_id":"11","object_repr":"[<Tag: Witcher>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"121","action_time":"2024-03-31 09:19:10.923611","object_id":"13","object_repr":"<Tag: book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"122","action_time":"2024-03-31 09:19:10.969514","object_id":"14","object_repr":"[<Tag: Witcher>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"123","action_time":"2024-03-31 09:24:34.664930","object_id":"11","object_repr":"witcher tower of swallows","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Status\", \"Tags\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"124","action_time":"2024-03-31 09:24:56.933659","object_id":"11","object_repr":"witcher tower of swallows","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Status\"]}}]","content_type_id":"7","user_id":"1"},
+{"id":"125","action_time":"2024-03-31 09:38:35.779917","object_id":"17","object_repr":"book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"126","action_time":"2024-03-31 09:38:35.805901","object_id":"15","object_repr":"[<Tag:","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"127","action_time":"2024-03-31 09:58:28.214425","object_id":"6","object_repr":"Witcher 3 wild hunt","action_flag":"2","change_message":"[]","content_type_id":"7","user_id":"1"},
+{"id":"128","action_time":"2024-03-31 10:51:19.389711","object_id":"23","object_repr":"[]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"129","action_time":"2024-03-31 10:51:30.712066","object_id":"18","object_repr":"<Tag: book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"130","action_time":"2024-03-31 10:51:30.738638","object_id":"22","object_repr":"book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"131","action_time":"2024-03-31 10:51:30.740686","object_id":"20","object_repr":"[<Tag:","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"132","action_time":"2024-03-31 10:51:30.743329","object_id":"19","object_repr":"[<Tag: Witcher>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"133","action_time":"2024-04-02 17:42:59.986843","object_id":"24","object_repr":"<Tag: book>]","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"134","action_time":"2024-04-02 17:43:00.009590","object_id":"25","object_repr":"[<Tag: Witcher>","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"}
+]
+}
+,{"type":"table","name":"django_content_type","database":"test_django","data":
+[
+{"id":"11","app_label":"account","model":"profile"},
+{"id":"17","app_label":"account","model":"profiletranslation"},
+{"id":"1","app_label":"admin","model":"logentry"},
+{"id":"3","app_label":"auth","model":"group"},
+{"id":"2","app_label":"auth","model":"permission"},
+{"id":"4","app_label":"auth","model":"user"},
+{"id":"8","app_label":"bloghome","model":"comment"},
+{"id":"7","app_label":"bloghome","model":"post"},
+{"id":"18","app_label":"bloghome","model":"posttranslation"},
+{"id":"5","app_label":"contenttypes","model":"contenttype"},
+{"id":"6","app_label":"sessions","model":"session"},
+{"id":"12","app_label":"social_django","model":"association"},
+{"id":"13","app_label":"social_django","model":"code"},
+{"id":"14","app_label":"social_django","model":"nonce"},
+{"id":"16","app_label":"social_django","model":"partial"},
+{"id":"15","app_label":"social_django","model":"usersocialauth"},
+{"id":"9","app_label":"taggit","model":"tag"},
+{"id":"10","app_label":"taggit","model":"taggeditem"}
+]
+}
+,{"type":"table","name":"django_migrations","database":"test_django","data":
+[
+{"id":"1","app":"contenttypes","name":"0001_initial","applied":"2024-03-19 11:09:25.714514"},
+{"id":"2","app":"auth","name":"0001_initial","applied":"2024-03-19 11:09:26.347352"},
+{"id":"3","app":"admin","name":"0001_initial","applied":"2024-03-19 11:09:26.481437"},
+{"id":"4","app":"admin","name":"0002_logentry_remove_auto_add","applied":"2024-03-19 11:09:26.489439"},
+{"id":"5","app":"admin","name":"0003_logentry_add_action_flag_choices","applied":"2024-03-19 11:09:26.497949"},
+{"id":"6","app":"contenttypes","name":"0002_remove_content_type_name","applied":"2024-03-19 11:09:26.564099"},
+{"id":"7","app":"auth","name":"0002_alter_permission_name_max_length","applied":"2024-03-19 11:09:26.623886"},
+{"id":"8","app":"auth","name":"0003_alter_user_email_max_length","applied":"2024-03-19 11:09:26.641585"},
+{"id":"9","app":"auth","name":"0004_alter_user_username_opts","applied":"2024-03-19 11:09:26.650560"},
+{"id":"10","app":"auth","name":"0005_alter_user_last_login_null","applied":"2024-03-19 11:09:26.707275"},
+{"id":"11","app":"auth","name":"0006_require_contenttypes_0002","applied":"2024-03-19 11:09:26.710257"},
+{"id":"12","app":"auth","name":"0007_alter_validators_add_error_messages","applied":"2024-03-19 11:09:26.717267"},
+{"id":"13","app":"auth","name":"0008_alter_user_username_max_length","applied":"2024-03-19 11:09:26.732616"},
+{"id":"14","app":"auth","name":"0009_alter_user_last_name_max_length","applied":"2024-03-19 11:09:26.749785"},
+{"id":"15","app":"auth","name":"0010_alter_group_name_max_length","applied":"2024-03-19 11:09:26.764927"},
+{"id":"16","app":"auth","name":"0011_update_proxy_permissions","applied":"2024-03-19 11:09:26.774411"},
+{"id":"17","app":"auth","name":"0012_alter_user_first_name_max_length","applied":"2024-03-19 11:09:26.790170"},
+{"id":"18","app":"taggit","name":"0001_initial","applied":"2024-03-19 11:09:26.970726"},
+{"id":"19","app":"taggit","name":"0002_auto_20150616_2121","applied":"2024-03-19 11:09:26.990817"},
+{"id":"20","app":"taggit","name":"0003_taggeditem_add_unique_index","applied":"2024-03-19 11:09:27.008642"},
+{"id":"21","app":"taggit","name":"0004_alter_taggeditem_content_type_alter_taggeditem_tag","applied":"2024-03-19 11:09:27.024794"},
+{"id":"22","app":"taggit","name":"0005_auto_20220424_2025","applied":"2024-03-19 11:09:27.029010"},
+{"id":"23","app":"taggit","name":"0006_rename_taggeditem_content_type_object_id_taggit_tagg_content_8fc721_idx","applied":"2024-03-19 11:09:27.220089"},
+{"id":"24","app":"bloghome","name":"0001_initial","applied":"2024-03-19 11:09:27.417689"},
+{"id":"25","app":"bloghome","name":"0002_alter_post_slug","applied":"2024-03-19 11:09:27.426665"},
+{"id":"26","app":"bloghome","name":"0003_comment","applied":"2024-03-19 11:09:27.533476"},
+{"id":"27","app":"bloghome","name":"0004_post_tags","applied":"2024-03-19 11:09:27.545014"},
+{"id":"28","app":"sessions","name":"0001_initial","applied":"2024-03-19 11:09:27.589815"},
+{"id":"30","app":"account","name":"0002_rename_data_of_birth_profile_date_of_birth","applied":"2024-03-21 18:03:40.409959"},
+{"id":"31","app":"default","name":"0001_initial","applied":"2024-03-22 21:07:41.045006"},
+{"id":"32","app":"social_auth","name":"0001_initial","applied":"2024-03-22 21:07:41.048273"},
+{"id":"33","app":"default","name":"0002_add_related_name","applied":"2024-03-22 21:07:41.062569"},
+{"id":"34","app":"social_auth","name":"0002_add_related_name","applied":"2024-03-22 21:07:41.065840"},
+{"id":"35","app":"default","name":"0003_alter_email_max_length","applied":"2024-03-22 21:07:41.078431"},
+{"id":"36","app":"social_auth","name":"0003_alter_email_max_length","applied":"2024-03-22 21:07:41.084035"},
+{"id":"37","app":"default","name":"0004_auto_20160423_0400","applied":"2024-03-22 21:07:41.096115"},
+{"id":"38","app":"social_auth","name":"0004_auto_20160423_0400","applied":"2024-03-22 21:07:41.099107"},
+{"id":"39","app":"social_auth","name":"0005_auto_20160727_2333","applied":"2024-03-22 21:07:41.119785"},
+{"id":"40","app":"social_django","name":"0006_partial","applied":"2024-03-22 21:07:41.168190"},
+{"id":"41","app":"social_django","name":"0007_code_timestamp","applied":"2024-03-22 21:07:41.197859"},
+{"id":"42","app":"social_django","name":"0008_partial_timestamp","applied":"2024-03-22 21:07:41.229170"},
+{"id":"43","app":"social_django","name":"0009_auto_20191118_0520","applied":"2024-03-22 21:07:41.272759"},
+{"id":"44","app":"social_django","name":"0010_uid_db_index","applied":"2024-03-22 21:07:41.297207"},
+{"id":"45","app":"social_django","name":"0011_alter_id_fields","applied":"2024-03-22 21:07:41.613579"},
+{"id":"46","app":"social_django","name":"0012_usersocialauth_extra_data_new","applied":"2024-03-22 21:07:41.648986"},
+{"id":"47","app":"social_django","name":"0013_migrate_extra_data","applied":"2024-03-22 21:07:41.672950"},
+{"id":"48","app":"social_django","name":"0014_remove_usersocialauth_extra_data","applied":"2024-03-22 21:07:41.705628"},
+{"id":"49","app":"social_django","name":"0015_rename_extra_data_new_usersocialauth_extra_data","applied":"2024-03-22 21:07:41.825449"},
+{"id":"50","app":"social_django","name":"0002_add_related_name","applied":"2024-03-22 21:07:41.834029"},
+{"id":"51","app":"social_django","name":"0003_alter_email_max_length","applied":"2024-03-22 21:07:41.836969"},
+{"id":"52","app":"social_django","name":"0005_auto_20160727_2333","applied":"2024-03-22 21:07:41.841143"},
+{"id":"53","app":"social_django","name":"0001_initial","applied":"2024-03-22 21:07:41.845078"},
+{"id":"54","app":"social_django","name":"0004_auto_20160423_0400","applied":"2024-03-22 21:07:41.850186"},
+{"id":"55","app":"bloghome","name":"0005_post_image","applied":"2024-03-22 22:00:58.824070"},
+{"id":"56","app":"bloghome","name":"0006_comment_user","applied":"2024-03-22 23:23:32.638505"},
+{"id":"57","app":"bloghome","name":"0007_remove_comment_email_remove_comment_name","applied":"2024-03-22 23:26:27.874380"},
+{"id":"58","app":"account","name":"0003_profile_bio","applied":"2024-03-23 14:25:06.496578"},
+{"id":"59","app":"account","name":"0004_profile_back_photo","applied":"2024-03-26 11:24:04.351677"},
+{"id":"60","app":"account","name":"0005_profile_detail_photo","applied":"2024-03-26 12:13:27.617224"},
+{"id":"61","app":"bloghome","name":"0008_alter_post_body","applied":"2024-03-30 11:02:53.030492"},
+{"id":"62","app":"bloghome","name":"0009_alter_post_body","applied":"2024-03-30 11:05:15.541103"},
+{"id":"63","app":"bloghome","name":"0002_alter_post_body","applied":"2024-03-30 11:28:18.021516"},
+{"id":"64","app":"bloghome","name":"0003_alter_post_body","applied":"2024-03-30 12:12:08.428365"},
+{"id":"65","app":"bloghome","name":"0004_alter_post_body","applied":"2024-03-30 14:21:49.972813"},
+{"id":"66","app":"account","name":"0006_alter_profile_bio","applied":"2024-03-31 07:45:38.190305"},
+{"id":"67","app":"bloghome","name":"0005_alter_post_body","applied":"2024-03-31 07:45:38.566681"}
+]
+}
+,{"type":"table","name":"django_session","database":"test_django","data":
+[
+{"session_key":"3zhfqtbjmcliupbmj9erksy72vq45173","session_data":".eJxVjDsOwjAQBe_iGllefwMlPWeIdr0LDiBbipMKcXeIlALaNzPvpUZclzKuXeZxYnVSVh1-N8L8kLoBvmO9NZ1bXeaJ9KbonXZ9aSzP8-7-HRTs5VubCNdoKUNgTj5IBEE_oAUkS5w4OUo0uAiGjbAlMDbyMUCg5Dk4Vu8P4lA3tA:1rnGnJ:SijQ4t-7pcFbT9IUbVJ1fvNgz3MdvIM8Vk8bUgMLyRc","expire_date":"2024-04-04 11:41:13.367402"},
+{"session_key":"6ctb46j6bxefaf6pfi2f01b2zitfvldy","session_data":"e30:1rnH7i:OfDlUCZsI6wkwmLgOr9r-Hdgt5RDvexZnwTTi_iTaU0","expire_date":"2024-04-04 12:02:18.587080"},
+{"session_key":"ahaoc05bdto745rryglo9wx65pinm2b9","session_data":".eJxVjDsOwjAQBe_iGln-fyjpcwZr7V1wANlSnFSIu0OkFNC-mXkvlmBba9oGLWlGdmaKnX63DOVBbQd4h3brvPS2LnPmu8IPOvjUkZ6Xw_07qDDqt3amEGqtggzSq-ivJQtRTDYk0OcIBYKREJ3TGqygSFagddpLbUFG9Oz9AdQTNz4:1rnH1K:HvFLdob6S74WBRvyA_DhdGOAjtawIzt0DwcFcM9Sy7g","expire_date":"2024-04-04 11:55:42.440234"},
+{"session_key":"i8izbqlc3kdcb0ra6xf8yc4anopegndu","session_data":".eJxVjEEOwiAQRe_C2hAQHIpL9z0DmRlGqRpISrsy3l2bdKHb_977L5VwXUpau8xpyuqsrDr8boT8kLqBfMd6a5pbXeaJ9KbonXY9tizPy-7-HRTs5VtHxsjA6AljgEAnCCz2OjiwngIbwMw2m2MGj2ZwhiSCCINDA4TBqvcH-XM4Vg:1rmveC:X_79ThryxZguVJwv0yTCzEuDLCulxv19ctlD-ZBXi4I","expire_date":"2024-04-03 13:06:24.017936"},
+{"session_key":"n7sktro8f97f464hzhabi24b171unkjj","session_data":".eJxVjMsOwiAQRf-FtSFQHgWX7v0GMswMUjUlKe3K-O_apAvd3nPOfYkE21rT1nlJE4mzGMTpd8uAD553QHeYb01im9dlynJX5EG7vDbi5-Vw_w4q9Pqti_asebDks40majLFDtojhjhS0MYVrdAyq6gsFChhROWInQlAaEiJ9wfbzDgB:1rnGu6:9JHj-IhBuKQlHtgCJddYe8C1Vx2vJxxCqnJx25Smchc","expire_date":"2024-04-04 11:48:14.822788"},
+{"session_key":"ov423yynvfknp823syw9w28fmtsrp0eq","session_data":".eJxVjEEOwiAQRe_C2hAQHIpL9z0DmRlGqRpISrsy3l2bdKHb_977L5VwXUpau8xpyuqsrDr8boT8kLqBfMd6a5pbXeaJ9KbonXY9tizPy-7-HRTs5VtHxsjA6AljgEAnCCz2OjiwngIbwMw2m2MGj2ZwhiSCCINDA4TBqvcH-XM4Vg:1rqXoW:hUeatK5YjQmTwevlFOAYeaN5_BzAWO5NZxQ116jTubA","expire_date":"2024-04-13 12:28:00.012617"},
+{"session_key":"ppik630jzswe5fvd3yql5c4k4gyl8hnn","session_data":".eJxVjDsOwjAQBe_iGlmsvywlPWewvPYaB5AtxUmFuDtESgHtm5n3EiGuSw3r4DlMWZyFEoffjWJ6cNtAvsd26zL1tswTyU2ROx3y2jM_L7v7d1DjqN_asQYgA04diyFQpIwGl51CIEZGb9Emz9p6XbI2lCL4kq11kBTiCcX7A7tANu8:1rnGs4:9qq7CrNK6sgto2_heBh1t9nZP_E7YjwVgy51k6hjrvo","expire_date":"2024-04-04 11:46:08.164141"},
+{"session_key":"sr7yyr1ekuh2iz0l2cbgp5qoiy68lu0b","session_data":".eJxVjDsOwjAQBe_iGln-xD9K-pzB2s3aOIBsKU4qxN1JpBTQvpl5bxZhW0vcelriTOzKFLv8bgjTM9UD0APqvfGp1XWZkR8KP2nnY6P0up3u30GBXvY65N0lUhaC9lagl0ErICUQkjQBnEiS_GAHclk4JTMaMEloaYm8Q2CfL_IKOCQ:1rnGpo:ywtB7EB5zdj4w9Tb4Flym5T7ZeS9guNdWg6iSBX4Qvg","expire_date":"2024-04-04 11:43:48.627654"},
+{"session_key":"uknje7h2zmulvhl9b2ko2mg34dw2wqbh","session_data":".eJxVjDsOwjAQBe_iGlnxP0tJzxmstXeDA8iW4qRC3B0ipYD2zcx7iYjbWuLWeYkzibPw4vS7JcwPrjugO9Zbk7nVdZmT3BV50C6vjfh5Ody_g4K9fGtmnY2HFKzTwJydMSNq5SigppwgGwg2KWPRQ5hApSGMSFNQhv2gCcT7A-X7N7U:1rqaFP:N0mGAvpyIG5_7j8-JQJFQ_FhidBoVv9tJZfkLPCBlZY","expire_date":"2024-04-13 15:03:55.525912"},
+{"session_key":"uz4waq0aq3ibxdtat0edkrvdppqlirz0","session_data":".eJxVjEEOwiAQRe_C2hAQHIpL9z0DmRlGqRpISrsy3l2bdKHb_977L5VwXUpau8xpyuqsrDr8boT8kLqBfMd6a5pbXeaJ9KbonXY9tizPy-7-HRTs5VtHxsjA6AljgEAnCCz2OjiwngIbwMw2m2MGj2ZwhiSCCINDA4TBqvcH-XM4Vg:1rri8x:dEV33rKCx0ij1x_FM5KxjfDuATcGEiRS507IcabN6U0","expire_date":"2024-04-16 17:41:55.906277"}
+]
+}
+,{"type":"table","name":"social_auth_association","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"social_auth_code","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"social_auth_nonce","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"social_auth_partial","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"social_auth_usersocialauth","database":"test_django","data":
+[
+
+]
+}
+,{"type":"table","name":"taggit_tag","database":"test_django","data":
+[
+{"id":"1","name":"metal","slug":"metal"},
+{"id":"2","name":"music","slug":"music"},
+{"id":"3","name":"Witcher","slug":"witcher"},
+{"id":"4","name":"book","slug":"book"},
+{"id":"5","name":"django","slug":"django"}
+]
+}
+,{"type":"table","name":"taggit_taggeditem","database":"test_django","data":
+[
+{"id":"9","object_id":"6","content_type_id":"7","tag_id":"1"},
+{"id":"8","object_id":"6","content_type_id":"7","tag_id":"3"},
+{"id":"76","object_id":"12","content_type_id":"7","tag_id":"4"},
+{"id":"78","object_id":"13","content_type_id":"7","tag_id":"4"},
+{"id":"54","object_id":"25","content_type_id":"7","tag_id":"4"},
+{"id":"55","object_id":"25","content_type_id":"7","tag_id":"5"}
+]
+}
+]

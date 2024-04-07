@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load minimize_text %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{{ post.title }}{% endblock title %}
+
+{% block content %}
+   
+<div class="main-header-post">
+    {% if post.image %}
+        <figure class="mb-4"><img class="img-fluid rounded" src="{{ post.image.url }}" alt="..." /></figure>
+    {% else %}
+        <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+    {% endif %} 
+</div>
+
+
+<div class="container negative-margin-top150">
+	<div class="col col-xl-8 m-auto col-lg-12 col-md-12 col-sm-12 col-12">
+		<div class="ui-block">
+
+			
+			<!-- Single Post -->
+			
+			<article class="hentry blog-post single-post single-post-v1">
+			
+                {% for tag in tags %}
+				    <a href='{% url "blog:post_list_by_tag" tag.slug %}' class="post-category bg-primary">{{ tag.name }}</a>
+                {% endfor %}
+				<h1 class="post-title">{{ post.title }}</h1>
+			
+				<div class="author-date">
+					<div class="author-thumb">
+                        {% if post.author.profile.photo %}
+						    <img alt="author" src="{{ post.author.profile.photo.url }}" class="avatar">
+                        {% else %}
+                            <img alt="author" src="{% static 'images/img/friend-harmonic7.jpg' %}" class="avatar">
+                        {% endif %}
+                    </div>
+					{% trans 'by' %}
+					<a class="h6 post__author-name fn" href="#">{{ post.author.username }}</a>
+					<div class="post__date">
+						<time class="published" datetime="2017-03-24T18:18">
+							-  {{ post.created }}
+						</time>
+					</div>
+				</div>
+			
+			
+				<div class="post-content-wrap">
+					<ul class="filter-icons">
+						<li>
+							<a href="#" class="post-add-icon inline-items">
+								<svg class="olymp-speech-balloon-icon"><use xlink:href="{% static 'images/svg-icons/sprites/icons.svg#olymp-speech-balloon-icon' %}"></use></svg>
+								<span>0</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="post-add-icon inline-items">
+								<img src="{% static 'images/img/icon-chat1.png' %}" alt="icon">
+								<span>58</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="post-add-icon inline-items">
+								<img src="{% static 'images/img/icon-chat26.png' %}" alt="icon">
+								<span>21</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="post-add-icon inline-items">
+								<img src="{% static 'images/img/icon-chat15.png' %}" alt="icon">
+								<span>3</span>
+							</a>
+						</li>
+					</ul>
+			
+					<div class="post-content">
+						{{ post.body|safe }}
+					</div>
+				</div>
+			
+			
+			</article>
+			
+			<!-- ... end Single Post -->
+
+			
+			<!-- Comments -->
+			
+            {% for comment in comments %}
+			<ul class="comments-list">
+				<li class="comment-item">
+					<div class="post__author author vcard inline-items">
+                        <a href='{% url 'profile' comment.user.username %}'>
+                            {% if comment.user.profile.photo %}
+                                <img class="rounded-circle" src="{{ comment.user.profile.photo.url }}" alt="..." />
+                            {% else %}
+                                <img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            {% endif %}
+                        </a>
+						<div class="author-date">
+							<a class="h6 post__author-name fn" href="{% url 'profile' comment.user.username %}">{{ comment.user }}</a>
+							<div class="post__date">
+								<time class="published">
+									{{ comment.created }}
+								</time>
+							</div>
+						</div>
+					</div>
+			
+					<p>{{ comment.body|linebreaks }}</p>
+			
+					<a href="#" class="post-add-icon inline-items">
+						<svg class="olymp-heart-icon"><use xlink:href="{% static 'images/svg-icons/sprites/icons.svg#olymp-heart-icon' %}"></use></svg>
+						<span>3</span>
+					</a>
+					<a href="#" class="reply">{% trans 'Reply' %}</a>
+				</li>
+			</ul>
+            {% endfor %}
+			<!-- ... end Comments -->
+           
+            {% if comments%}
+                <a href="#" class="more-comments">{% trans 'View more comments' %}<span>+</span></a>
+            {% else %}
+            {% endif %}
+			
+
+			<!-- Comment Form  -->
+			
+			<div class="comment-form inline-items">
+			
+				<div class="post__author author vcard inline-items">
+                    {% if users.profile.photo %}
+					    <img src="{{ users.profile.photo.url }}" alt="author">
+                    {% else %}
+                        {% comment %} <img src="{% static 'images/img/author-page.jpg' %}" alt="author"> {% endcomment %}
+                    {% endif %}
+					<div class="form-group with-icon-right ">
+                        {% include "blog/includes/comment_form.html" %}
+                                                                        
+					</div>
+				</div>
+			</div>
+			
+            
+            {% with similar_posts.count as total_similar_posts %}
+                <h3 class="lead mb-0">
+                    {{ similar_posts.count }} {% trans 'Recommended' %}{{ total_similar_posts|pluralize }}:
+                </h3>
+            {% endwith %}
+              
+
+            <section class="mb-5">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        {% if similar_posts %}
+                        <div class="row">
+                            {% for post in similar_posts %}
+                            <div class="comment-container">
+                                <!-- Blog post-->
+                                <div class="card mb-4">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            {% if post.image %}
+                                                <a href="{{ post.get_absolute_url }}"><img class="card-img-top square-img" src="{{ post.image.url }}" alt="..." /></a>
+                                            {% else %}
+                                                <a href="{{ post.get_absolute_url }}"><img class="card-img-top square-img" src="https://dummyimage.com/700x700/dee2e6/6c757d.jpg" alt="..." /></a>
+                                            {% endif %}
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <div class="small text-muted">{{ post.publish }}</div>
+                                                <h2 class="card-title h4">{{ post.title }}</h2>
+                                                <p class="card-text">{{ post.body|minimize_text|safe }}
+                                                    <a class="#" href="{{ post.get_absolute_url }}">{% trans 'Read more →' %}</a>
+                                                </p>
+                                                <p class='tags'>{% trans 'Tags:' %} {{ post.tags.all|join:", " }}
+                                                    
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+                        {% else %}
+                            <p class='ms-3'>{% trans 'There are no comments.' %}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+			<!-- ... end Comment Form  -->
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
+

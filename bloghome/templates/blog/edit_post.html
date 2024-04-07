@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Edit Your Post' %}{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    
+	<div class="row">
+        
+		<div class="col col-lg-12 col-md-12 col-sm-12 col-12">
+			<h2 class="presentation-margin">{% trans 'Edit Your Post' %}</h2>
+
+			<div class="ui-block">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="{% if message.tags == 'success' %}alert alert-success{% else %}alert alert-danger{% endif %}">
+                                {{ message|safe }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+				<div class="ui-block-content">
+					<div class="row">
+						<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group label-floating is-empty">
+                                <form method='post' enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    {{ form.media }}
+                                    {{ form.as_p }}
+                                    <input class="btn btn-info" type="submit" placeholder="">
+                                </form>
+							</div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+{% endblock content %}
+

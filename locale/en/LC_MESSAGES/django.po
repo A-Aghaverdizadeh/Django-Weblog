@@ -1,0 +1,480 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-06 18:22+0330\n"
+"PO-Revision-Date: 2024-04-06 13:47+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\account\forms.py:44 .\account\forms.py:87
+msgid "Your password must contain at least 8 characters."
+msgstr "Your password must contain at least 8 characters."
+
+#: .\account\forms.py:52 .\account\forms.py:95
+msgid "Your password can't be entirely numeric."
+msgstr "Your password can't be entirely numeric."
+
+#: .\account\templates\account\dashboard.html:4
+msgid "Profile"
+msgstr "Profile"
+
+#: .\account\templates\account\dashboard.html:36
+msgid "Web Designer"
+msgstr "Web Designer"
+
+#: .\account\templates\account\dashboard.html:42
+msgid "Welcome to your dashboard."
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:44
+msgid "You can"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:46
+msgid "edit your profile"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:48
+msgid "or"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:50
+msgid "change your password"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:53
+msgid "Add new post"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:56
+msgid "Your Posts"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:59
+msgid "Your Profile"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:62
+msgid "Information"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:65
+msgid "Email"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:69
+msgid "Username"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:73
+msgid "Bio"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:82
+#: .\account\templates\registration\password_change_form.html:4
+msgid "Change Password"
+msgstr ""
+
+#: .\account\templates\account\dashboard.html:86
+msgid "Public Profile"
+msgstr ""
+
+#: .\account\templates\account\edit.html:5
+msgid "Edit your account"
+msgstr ""
+
+#: .\account\templates\account\edit.html:21
+msgid "Profile Picture"
+msgstr ""
+
+#: .\account\templates\account\edit.html:33
+msgid "Upload new image"
+msgstr ""
+
+#: .\account\templates\account\edit.html:42
+msgid "Account Details"
+msgstr ""
+
+#: .\account\templates\account\edit.html:71
+msgid "Back Image:"
+msgstr ""
+
+#: .\account\templates\account\edit.html:76
+msgid "Detail Image:"
+msgstr ""
+
+#: .\account\templates\account\edit.html:90
+msgid "Save changes"
+msgstr ""
+
+#: .\account\templates\account\login.html:4
+msgid "Login"
+msgstr ""
+
+#: .\account\templates\account\login.html:23
+msgid "Sign In"
+msgstr ""
+
+#: .\account\templates\account\login.html:39
+msgid "Forgot"
+msgstr ""
+
+#: .\account\templates\account\login.html:43
+#: .\account\templates\registration\password_change_form.html:37
+#: .\account\templates\registration\password_reset_confirm.html:36
+#: .\account\templates\registration\password_reset_form.html:26
+msgid "Username / Password?"
+msgstr ""
+
+#: .\account\templates\account\login.html:49
+#: .\account\templates\registration\password_change_form.html:43
+#: .\account\templates\registration\password_reset_confirm.html:42
+#: .\account\templates\registration\password_reset_form.html:32
+msgid "Don’t have an account?"
+msgstr ""
+
+#: .\account\templates\account\login.html:53
+#: .\account\templates\registration\password_change_form.html:47
+#: .\account\templates\registration\password_reset_confirm.html:46
+#: .\account\templates\registration\password_reset_form.html:36
+msgid "Sign up now"
+msgstr ""
+
+#: .\account\templates\account\profile.html:6
+msgid "User Profile"
+msgstr ""
+
+#: .\account\templates\account\profile.html:69
+msgid "Published Posts"
+msgstr ""
+
+#: .\account\templates\account\profile.html:97
+#: .\bloghome\templates\blog\detail.html:179
+#: .\bloghome\templates\blog\list.html:36
+#: .\bloghome\templates\blog\list.html:55
+#: .\bloghome\templates\blog\search.html:40
+#: .\bloghome\templates\blog\user_list_post.html:29
+msgid "Read more →"
+msgstr ""
+
+#: .\account\templates\account\profile.html:99
+#: .\bloghome\templates\blog\detail.html:181
+#: .\bloghome\templates\blog\list.html:35
+#: .\bloghome\templates\blog\list.html:54
+#: .\bloghome\templates\blog\search.html:39
+#: .\bloghome\templates\blog\user_list_post.html:28
+msgid "Tags:"
+msgstr ""
+
+#: .\account\templates\account\profile.html:112
+msgid "This user published no posts"
+msgstr ""
+
+#: .\account\templates\account\profile.html:128
+msgid "Personal Info"
+msgstr ""
+
+#: .\account\templates\account\profile.html:138
+msgid "About Me:"
+msgstr ""
+
+#: .\account\templates\account\profile.html:142
+msgid "Birthday:"
+msgstr ""
+
+#: .\account\templates\account\profile.html:151
+msgid "Other Social Networks:"
+msgstr ""
+
+#: .\account\templates\account\profile.html:154
+msgid "Facebook"
+msgstr ""
+
+#: .\account\templates\account\profile.html:158
+msgid "Twitter"
+msgstr ""
+
+#: .\account\templates\account\profile.html:162
+msgid "Dribbble"
+msgstr ""
+
+#: .\account\templates\account\register.html:25
+msgid "Create an account"
+msgstr ""
+
+#: .\account\templates\account\register.html:40
+msgid "Have an account?"
+msgstr ""
+
+#: .\account\templates\account\register.html:44
+msgid "Log in now"
+msgstr ""
+
+#: .\account\templates\account\register_done.html:4
+#: .\account\templates\account\register_done.html:17
+msgid "Welcome"
+msgstr ""
+
+#: .\account\templates\account\register_done.html:22
+msgid "Log in"
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:4
+#: .\account\templates\registration\password_change_done.html:17
+msgid "Password Changed."
+msgstr ""
+
+#: .\account\templates\registration\password_change_done.html:20
+msgid "Your password has been successfully changed."
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:23
+msgid "Change Password!"
+msgstr ""
+
+#: .\account\templates\registration\password_change_form.html:33
+#: .\account\templates\registration\password_reset_confirm.html:32
+#: .\account\templates\registration\password_reset_form.html:22
+msgid "Have"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:4
+msgid "Password reset"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:17
+msgid "Password Set."
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:21
+msgid "Your password has been set. You can"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:21
+msgid "log in"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_complete.html:22
+msgid "now"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_confirm.html:4
+#: .\account\templates\registration\password_reset_confirm.html:22
+msgid "Reset your password"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_done.html:4
+#: .\account\templates\registration\password_reset_done.html:17
+msgid "Reset Your Password"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_email.html:2
+msgid "Someone asked for a password reset for email"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_email.html:2
+msgid "Follow the link below:"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_email.html:6
+msgid "Your username, in case you"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_form.html:3
+msgid "Reset your Password"
+msgstr ""
+
+#: .\account\templates\registration\password_reset_form.html:12
+msgid "Forgotten your password?"
+msgstr ""
+
+#: .\blog\settings.py:137
+msgid "English"
+msgstr ""
+
+#: .\blog\settings.py:138
+msgid "Persian"
+msgstr ""
+
+#: .\blog\urls.py:11
+msgid "account/"
+msgstr ""
+
+#: .\blog\urls.py:12
+msgid "social-auth/"
+msgstr ""
+
+#: .\bloghome\templates\base.html:104
+msgid "medium"
+msgstr ""
+
+#: .\bloghome\templates\base.html:109 .\bloghome\templates\blog\list.html:5
+msgid "Home"
+msgstr ""
+
+#: .\bloghome\templates\base.html:112
+msgid "About"
+msgstr ""
+
+#: .\bloghome\templates\base.html:115
+msgid "Contact"
+msgstr ""
+
+#: .\bloghome\templates\base.html:124
+msgid "Language"
+msgstr ""
+
+#: .\bloghome\templates\base.html:136
+msgid "Dashboard"
+msgstr ""
+
+#: .\bloghome\templates\base.html:141
+msgid "Logout"
+msgstr ""
+
+#: .\bloghome\templates\base.html:142
+msgid "Hello"
+msgstr ""
+
+#: .\bloghome\templates\base.html:144
+msgid "Log-in"
+msgstr ""
+
+#: .\bloghome\templates\base.html:158
+msgid "Footer"
+msgstr ""
+
+#: .\bloghome\templates\blog\add_post.html:4
+msgid "Add New Post"
+msgstr ""
+
+#: .\bloghome\templates\blog\add_post.html:13
+msgid "Form Elements"
+msgstr ""
+
+#: .\bloghome\templates\blog\comment.html:4
+#: .\bloghome\templates\blog\comment.html:9
+msgid "Your thought has ben added"
+msgstr ""
+
+#: .\bloghome\templates\blog\comment.html:10
+msgid "Back to post"
+msgstr ""
+
+#: .\bloghome\templates\blog\detail.html:41
+msgid "by"
+msgstr ""
+
+#: .\bloghome\templates\blog\detail.html:119
+msgid "Reply"
+msgstr ""
+
+#: .\bloghome\templates\blog\detail.html:126
+msgid "View more comments"
+msgstr ""
+
+#: .\bloghome\templates\blog\detail.html:152
+msgid "Recommended"
+msgstr ""
+
+#: .\bloghome\templates\blog\detail.html:194
+msgid "There are no comments."
+msgstr ""
+
+#: .\bloghome\templates\blog\edit_post.html:4
+#: .\bloghome\templates\blog\edit_post.html:13
+msgid "Edit Your Post"
+msgstr ""
+
+#: .\bloghome\templates\blog\includes\comment_form.html:3
+msgid "Share your thoughts:"
+msgstr ""
+
+#: .\bloghome\templates\blog\includes\comment_form.html:8
+msgid "Respond"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:32
+#: .\bloghome\templates\blog\list.html:51
+#: .\bloghome\templates\blog\user_list_post.html:25
+msgid "Writer"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:32
+#: .\bloghome\templates\blog\list.html:51
+#: .\bloghome\templates\blog\user_list_post.html:25
+msgid "Published in"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:68
+#: .\bloghome\templates\blog\search.html:5
+msgid "Search"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:73
+msgid "Go!"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:80
+msgid "Categories"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:82
+msgid "Posts tagged with"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:101
+msgid "Side Widget"
+msgstr ""
+
+#: .\bloghome\templates\blog\list.html:102
+msgid ""
+"You can put anything you want inside of these side widgets. They are easy to "
+"use, and feature the Bootstrap 5 card component!"
+msgstr ""
+
+#: .\bloghome\templates\blog\search.html:13
+msgid "Posts containing \"{{ query }}\""
+msgstr ""
+
+#: .\bloghome\templates\blog\search.html:16
+msgid "Found"
+msgstr ""
+
+#: .\bloghome\templates\blog\search.html:16
+msgid "result"
+msgstr ""
+
+#: .\bloghome\templates\blog\search.html:46
+msgid "There are no results for your query."
+msgstr ""
+
+#: .\bloghome\templates\blog\user_list_post.html:5
+msgid "User Posts"
+msgstr ""
+
+#: .\bloghome\templates\blog\user_list_post.html:30
+msgid "Edit your post"
+msgstr ""
+
+#: .\bloghome\templates\paginator.html:8 .\bloghome\templates\paginator.html:12
+msgid "Previous"
+msgstr ""
+
+#: .\bloghome\templates\paginator.html:30
+#: .\bloghome\templates\paginator.html:34
+msgid "Next"
+msgstr ""

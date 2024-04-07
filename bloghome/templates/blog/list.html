@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load minimize_text %}
+{% load i18n %}
+
+{% block title %}{% trans 'Home' %}{% endblock title %}
+
+{% block content %}
+<!-- Page header with logo and tagline-->
+<br><br><br>
+    {% comment %} <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+                <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+            </div>
+        </div>
+    </header> {% endcomment %}
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    {% if newest_post.image %}
+                        <a href="{{ newest_post.get_absolute_url }}"><img class="card-img-top" src="{{ newest_post.image.url }}" alt="..." /></a>
+                    {% else %}
+                        <a href="{{ newest_post.get_absolute_url }}"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                    {% endif %}
+                    <div class="card-body">
+                        <div class="small text-muted">{% trans 'Writer' %} {{ newest_post.author.username }} {% trans 'Published in' %}  {{ newest_post.publish }} <br> Newest Post</div>
+                        <h2 class="card-title">{{ newest_post.title }}</h2>
+                        <p class="card-text">{{ newest_post.body|minimize_text:250|safe }}</p>
+                        <p class='tags'>{% trans 'Tags:' %} {{ newest_post.tags.all|join:", " }}</P>
+                        <a class="btn btn-primary" href="{{ newest_post.get_absolute_url }}">{% trans 'Read more →' %}</a>
+                    </div>
+                </div>
+                <!-- Nested row for non-featured blog posts--> 
+                <div class="row">
+                    {% for post in posts %}
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            {% if post.image %}
+                                <a href="{{ post.get_absolute_url }}"><img class="card-img-top" src="{{ post.image.url }}" alt="..." /></a>
+                            {% else %}
+                                <a href="{{ post.get_absolute_url }}"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            {% endif %}
+                            <div class="card-body">
+                                <div class="small text-muted">{% trans 'Writer' %} {{ post.author.username }} {% trans 'Published in' %} <br> {{ post.publish }}</div>
+                                <h2 class="card-title h4">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.body|minimize_text|safe }}</p>
+                                <p class='tags'>{% trans 'Tags:' %} {{ post.tags.all|join:", " }}</P>
+                                <a class="btn btn-primary" href="{{ post.get_absolute_url }}">{% trans 'Read more →' %}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            <!-- Pagination -->
+                {% include "paginator.html" with page=posts %}
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">{% trans 'Search' %}</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <form method='get' action='{% url "blog:post_search" %}' class="input-group">
+                                {{ form }}
+                                <button class="btn btn-primary" id="button-search" type="submit">{% trans 'Go!' %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">{% trans 'Categories' %}<br>
+                    {% if tag %}
+                        <div class='small text-muted'>{% trans 'Posts tagged with' %} <var><u>{{ tag.name }}</u></var></div>
+                    {% endif %}
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for tag in tags %}
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="{% url "blog:post_list_by_tag" tag.slug %}">
+                                        {{ tag.name }}
+                                    </a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">{% trans 'Side Widget' %}</div>
+                    <div class="card-body">{% trans 'You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!' %}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

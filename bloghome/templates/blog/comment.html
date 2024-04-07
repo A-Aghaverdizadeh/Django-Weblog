@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'Your thought has ben added' %}{% endblock title %}
+
+{% block content %}
+    <br><br><br><br><br><br><br><br><br>
+    {% if comment %}
+        <h2 align='center' class="card-title">{% trans 'Your thought has ben added' %}</h2><br><br><br>
+        <p align='center' class="lead mb-0"><a type="button" class="btn btn-primary" href='{{ post.get_absolute_url }}'>{% trans 'Back to post' %}</a></p>
+    {% endif %}
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}
+

@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load minimize_text%}
+{% load i18n %}
+
+{% block title %}{% trans 'User Profile' %}{% endblock title %}
+
+{% block content %}
+
+<br><br><br><br>
+
+<!-- Top Header-Profile -->
+
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="top-header">
+					{% if messages %}
+						{% for message in messages %}
+							<div class="{% if message.tags == 'success' %}alert alert-success{% else %}alert alert-danger{% endif %}">
+									{{ message|safe }}
+							</div>
+						{% endfor %}
+                	{% endif %}
+					<div class="top-header-thumb">
+						{% if user.profile.back_photo %}
+							<img src="{{ user.profile.back_photo.url }}" alt="nature">
+						{% else %}
+							<img src="{% static 'images/img/top-header1.jpg' %}" alt="nature">
+						{% endif %}
+					</div>
+					<div class="profile-section">
+						
+							<div class="col col-lg-5 ml-auto col-md-5 col-sm-12 col-12">
+								<ul class="profile-menu">
+									
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="top-header-author">
+						<a href="#" class="author-thumb">
+							{% if user.profile.detail_photo %}
+								<img src="{{ user.profile.detail_photo.url }}" alt="author">
+							{% else %}
+								<img src="{% static 'images/img/author-main1.jpg' %}" alt="author">
+							{% endif %}
+						</a>
+						<div class="author-content">
+							<a href="#" class="h4 author-name">{{ user.username }}</a>
+							<div class="country"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ... end Top Header-Profile -->
+
+<div class="container">
+	<div class="row">
+		<div class="col col-xl-8 order-xl-2 col-lg-8 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="ui-block-title">
+					<h6 class="title">{% trans 'Published Posts' %}</h6>
+					<a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="{% static 'images/svg-icons/sprites/icons.svg#olymp-three-dots-icon' %}"></use></svg></a>
+				</div>
+				<div class="ui-block-content">
+					<div class="row">
+						<div class="">
+							<section class="mb-5">
+								<div class="card bg-light">
+									<div class="card-body">
+										{% if posts %}
+										<div class="row">
+											{% for post in posts %}
+											<div class="comment-container">
+												<!-- Blog post-->
+												<div class="card mb-4">
+													<div class="row">
+														<div class="col-md">
+															{% if post.image %}
+																<a href="{{ post.get_absolute_url }}"><img class="card-img-top square-img" src="{{ post.image.url }}" alt="..." /></a>
+															{% else %}
+																<a href="{{ post.get_absolute_url }}"><img class="card-img-top square-img" src="https://dummyimage.com/700x700/dee2e6/6c757d.jpg" alt="..." /></a>
+															{% endif %}
+														</div>
+														<div class="col-md-8">
+															<div class="card-body">
+																<div class="small text-muted">{{ post.publish }}</div>
+																<h2 class="card-title h4">{{ post.title }}</h2>
+																<p class="card-text">{{ post.body|minimize_text|safe }}
+																	<a class="#" href="{{ post.get_absolute_url }}">{% trans 'Read more →' %}</a>
+																</p>
+																	<p class='tags'>{% trans 'Tags:' %} {{ post.tags.all|join:", " }}
+																</p>
+																
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											{% endfor %}
+										</div>
+										
+										{% else %}
+											<p class='ms-3'>{% trans 'This user published no posts' %}</p>
+										{% endif %}
+									</div>
+								</div>
+							</section>
+							<!-- ... end W-Personal-Info -->
+						</div>
+						
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div class="col col-xl-4 order-xl-1 col-lg-4 order-lg-1 col-md-12 order-md-2 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="ui-block-title">
+					<h6 class="title">{% trans 'Personal Info' %}</h6>
+					<a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+				</div>
+				<div class="ui-block-content">
+
+					
+					<!-- W-Personal-Info -->
+					
+					<ul class="widget w-personal-info">
+						<li>
+							<span class="title">{% trans 'About Me:' %}</span>
+							<span class="text">{{ user.profile.bio|safe }}</span>
+						</li>
+						<li>
+							<span class="title">{% trans 'Birthday:' %}</span>
+							<span class="text">{{ user.profile.date_of_birth }}</span>
+						</li>
+					</ul>
+					
+					<!-- ... end W-Personal-Info -->
+					<!-- W-Socials -->
+					
+					<div class="widget w-socials">
+						<h6 class="title">{% trans 'Other Social Networks:' %}</h6>
+						<a href="#" class="social-item bg-facebook">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+							{% trans 'Facebook' %}
+						</a>
+						<a href="#" class="social-item bg-twitter">
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+							{% trans 'Twitter' %}
+						</a>
+						<a href="#" class="social-item bg-dribbble">
+							<i class="fab fa-dribbble" aria-hidden="true"></i>
+							{% trans 'Dribbble' %}
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,16 @@
+[
+
+  "./src/js/jquery.appear-init.js",
+  "./src/js/headroom-init.js",
+  "./src/js/waypoints-init.js",
+  "./src/js/main.js",
+  "./src/js/material-init.js",
+  "./src/js/form-validation-init.js",
+  "./src/js/bootstrap-components-init.js",
+  "./src/js/selectize-init.js",
+  "./src/js/swiper-init.js",
+  "./src/js/isotope.pkgd-init.js",
+  "./src/js/jquery.magnific-popup-init.js",
+  "./src/js/sticky-sidebar-init.js"
+
+]

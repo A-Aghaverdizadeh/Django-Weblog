@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load minimize_text %}
+{% load i18n %}
+
+{% block title %}{% trans 'User Posts' %}{% endblock title %}
+
+{% block content %}
+<br><br>
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-12">
+            <!-- Nested row for non-featured blog posts--> 
+            <div class="row">
+                {% for post in posts %}
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        {% if post.image %}
+                            <a href="{{ post.get_absolute_url }}"><img class="card-img-top" src="{{ post.image.url }}" alt="..." /></a>
+                        {% else %}
+                            <a href="{{ post.get_absolute_url }}"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="small text-muted">{% trans 'Writer' %} {{ post.author.username }} {% trans 'Published in' %} <br> {{ post.publish }}</div>
+                            <h2 class="card-title h4">{{ post.title }}</h2>
+                            <p class="card-text">{{ post.body|minimize_text|safe }}</p>
+                            <p class='tags'>{% trans 'Tags:' %} {{ post.tags.all|join:", " }}</P>
+                            <a class="btn btn-primary" href="{{ post.get_absolute_url }}">{% trans 'Read more →' %}</a>
+                            <a class="btn btn-info" href="{% url 'blog:edit_post' post_id=post.id %}">{% trans 'Edit your post' %}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        <!-- Pagination -->
+            {% include "paginator.html" with page=posts %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
