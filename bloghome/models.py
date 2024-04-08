@@ -75,3 +75,12 @@ class Comment(models.Model):
 
 	def __str__(self):
 		return f'comment by {self.user} on {self.post}'
+
+
+class Contact(models.Model):
+	about = RichTextField(blank=True, null=True)
+	contact= RichTextField(blank=True, null=True)
+	created = models.DateTimeField(auto_now_add=True)
+	updated = models.DateTimeField(auto_now=True)
+
+	

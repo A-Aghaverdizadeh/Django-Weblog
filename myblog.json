@@ -90,12 +90,16 @@
 {"id":"65","name":"Can add انتخاب فونت","content_type_id":"17","codename":"add_font"},
 {"id":"66","name":"Can change انتخاب فونت","content_type_id":"17","codename":"change_font"},
 {"id":"67","name":"Can delete انتخاب فونت","content_type_id":"17","codename":"delete_font"},
-{"id":"68","name":"Can view انتخاب فونت","content_type_id":"17","codename":"view_font"}
+{"id":"68","name":"Can view انتخاب فونت","content_type_id":"17","codename":"view_font"},
+{"id":"69","name":"Can add contact","content_type_id":"18","codename":"add_contact"},
+{"id":"70","name":"Can change contact","content_type_id":"18","codename":"change_contact"},
+{"id":"71","name":"Can delete contact","content_type_id":"18","codename":"delete_contact"},
+{"id":"72","name":"Can view contact","content_type_id":"18","codename":"view_contact"}
 ]
 }
 ,{"type":"table","name":"auth_user","database":"myblog","data":
 [
-{"id":"1","password":"pbkdf2_sha256$600000$Vodb7AAKQOaMQQxUc87FUJ$eDO\/klSpcU4H93Dh9LwDoh50cqgWBvvA8S+4e7Yw2us=","last_login":"2024-04-06 13:48:47.645089","is_superuser":"1","username":"admin","first_name":"","last_name":"","email":"","is_staff":"1","is_active":"1","date_joined":"2024-04-04 11:54:47.289234"}
+{"id":"1","password":"pbkdf2_sha256$600000$Vodb7AAKQOaMQQxUc87FUJ$eDO\/klSpcU4H93Dh9LwDoh50cqgWBvvA8S+4e7Yw2us=","last_login":"2024-04-07 13:59:33.570555","is_superuser":"1","username":"admin","first_name":"","last_name":"","email":"","is_staff":"1","is_active":"1","date_joined":"2024-04-04 11:54:47.289234"}
 ]
 }
 ,{"type":"table","name":"auth_user_groups","database":"myblog","data":
@@ -110,7 +114,13 @@
 }
 ,{"type":"table","name":"bloghome_comment","database":"myblog","data":
 [
-
+{"id":"1","body":"its fascinating game","created":"2024-04-08 08:37:08.755123","updated":"2024-04-08 08:37:08.755123","active":"1","post_id":"1","user_id":"1"},
+{"id":"2","body":"این بازی خیلی خوبه","created":"2024-04-08 08:39:28.454421","updated":"2024-04-08 08:39:28.454421","active":"1","post_id":"1","user_id":"1"}
+]
+}
+,{"type":"table","name":"bloghome_contact","database":"myblog","data":
+[
+{"id":"3","about":"<p>this site created by <strong>me<\/strong><\/p>","contact":"<p><strong>fuck you all<\/strong><\/p>","created":"2024-04-08 09:38:49.875340","updated":"2024-04-08 10:02:52.915962"}
 ]
 }
 ,{"type":"table","name":"bloghome_post","database":"myblog","data":
@@ -128,7 +138,9 @@
 {"id":"6","action_time":"2024-04-07 08:20:11.827966","object_id":"1","object_repr":"کلیک کنید و انتخاب کنید","action_flag":"2","change_message":"[]","content_type_id":"17","user_id":"1"},
 {"id":"7","action_time":"2024-04-07 08:20:15.166774","object_id":"1","object_repr":"کلیک کنید و انتخاب کنید","action_flag":"2","change_message":"[]","content_type_id":"17","user_id":"1"},
 {"id":"8","action_time":"2024-04-07 08:20:26.627603","object_id":"1","object_repr":"کلیک کنید و انتخاب کنید","action_flag":"3","change_message":"","content_type_id":"17","user_id":"1"},
-{"id":"9","action_time":"2024-04-07 08:20:33.362205","object_id":"2","object_repr":"کلیک کنید و انتخاب کنید","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"\\u0627\\u0646\\u062a\\u062e\\u0627\\u0628 \\u0641\\u0648\\u0646\\u062a\"]}}]","content_type_id":"17","user_id":"1"}
+{"id":"9","action_time":"2024-04-07 08:20:33.362205","object_id":"2","object_repr":"کلیک کنید و انتخاب کنید","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"\\u0627\\u0646\\u062a\\u062e\\u0627\\u0628 \\u0641\\u0648\\u0646\\u062a\"]}}]","content_type_id":"17","user_id":"1"},
+{"id":"10","action_time":"2024-04-08 09:38:49.891268","object_id":"3","object_repr":"Contact object (3)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"18","user_id":"1"},
+{"id":"11","action_time":"2024-04-08 10:02:52.950446","object_id":"3","object_repr":"Contact object (3)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Contact\"]}}]","content_type_id":"18","user_id":"1"}
 ]
 }
 ,{"type":"table","name":"django_content_type","database":"myblog","data":
@@ -140,6 +152,7 @@
 {"id":"3","app_label":"auth","model":"permission"},
 {"id":"5","app_label":"auth","model":"user"},
 {"id":"14","app_label":"bloghome","model":"comment"},
+{"id":"18","app_label":"bloghome","model":"contact"},
 {"id":"13","app_label":"bloghome","model":"post"},
 {"id":"6","app_label":"contenttypes","model":"contenttype"},
 {"id":"7","app_label":"sessions","model":"session"},
@@ -218,12 +231,14 @@
 {"id":"62","app":"admin_persian","name":"0003_rename_font_font_name","applied":"2024-04-06 13:45:30.428566"},
 {"id":"63","app":"admin_persian","name":"0004_alter_font_name","applied":"2024-04-06 13:45:30.434577"},
 {"id":"64","app":"admin_persian","name":"0005_alter_font_name","applied":"2024-04-06 13:45:30.439740"},
-{"id":"65","app":"admin_persian","name":"0006_alter_font_options","applied":"2024-04-06 13:45:30.445891"}
+{"id":"65","app":"admin_persian","name":"0006_alter_font_options","applied":"2024-04-06 13:45:30.445891"},
+{"id":"66","app":"bloghome","name":"0006_contact","applied":"2024-04-08 08:59:04.097787"},
+{"id":"67","app":"bloghome","name":"0007_alter_contact_about_alter_contact_contact","applied":"2024-04-08 09:37:37.832798"}
 ]
 }
 ,{"type":"table","name":"django_session","database":"myblog","data":
 [
-{"session_key":"f4qvp3ypvw1ougye8r0i8wirf75a00jn","session_data":".eJxVjDsOwjAQRO_iGlmsvxtKes5grb0ODiBbipMKcXcSKQVMOe_NvEWgdSlh7XkOE4uLAHH67SKlZ6474AfVe5Op1WWeotwVedAub43z63q4fweFetnWWWXjR-cTIDqyCsEoC9Fo0nQGBx6HzGk0GrcYVikyKozAWjnLgxOfL8BZNvQ:1rt6PX:wDO3709BIr8wZZzE7qUuTMIspRsFt6SV9xwtznbH-kI","expire_date":"2024-04-20 13:48:47.649076"}
+{"session_key":"1u7ww6ygps3g0kd2188897g67d0ukpik","session_data":".eJxVjMsOwiAQRf-FtSHDG1y69xsIw4BUDU1KuzL-uzbpQrf3nHNfLKZtbXEbZYkTsTMT7PS7YcqP0ndA99RvM89zX5cJ-a7wgw5-nak8L4f7d9DSaN86eBWCrEFoU4z1lgQJVUCgTAgU0OssLXqqYHMFpUSVxRkAnavT3in2_gDEfjcZ:1rtT3V:3FKN3AY6S-v6fulbVLaHIBhNoo0gTkfRTrUAuKhPdqY","expire_date":"2024-04-21 13:59:33.581949"}
 ]
 }
 ,{"type":"table","name":"social_auth_association","database":"myblog","data":

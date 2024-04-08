@@ -16,5 +16,7 @@ urlpatterns = [
 	path('add-post/', views.create_post, name='create_post'),
 	path('edit-post/<int:post_id>', views.edit_post, name='edit_post'),
 	path('posts/<str:user_name>', views.published_posts, name='published_posts'),
+	path('about/', views.about, name='about'),
+	path('contact/', views.contact, name='contact'),
 ]
 

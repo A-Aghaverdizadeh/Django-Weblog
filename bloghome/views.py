@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Comment
+from .models import Post, Comment, Contact
 from .forms import CommentForm, SearchForm, PostForm
 from django.http import Http404
 from django.urls import reverse
@@ -200,4 +200,14 @@ def published_posts(request, user_name):
 	context = {'user': user,
 				'posts': posts,}
 	return render(request, 'blog/user_list_post.html', context)
+
+def about(request):
+	contact = Contact.objects.all()
+	context = {'contacts': contact}
+	return render(request, 'blog/about.html', context)
+
+def contact(request):
+	contact = Contact.objects.all()
+	context = {'contacts': contact}
+	return render(request, 'blog/contact.html', context)
 
